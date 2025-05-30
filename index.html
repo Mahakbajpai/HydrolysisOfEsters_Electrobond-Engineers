@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester Hydrolysis Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ester Hydrolysis: Rate Constant Determination</h1>
+        <div id="lab-area">
+            <div id="instructions-box">
+                <h2>Instructions</h2>
+                <p id="current-instruction"></p>
+                <button id="next-step-btn" class="hidden">Next Step</button>
+            </div>
+            <div id="experiment-setup" class="hidden">
+                <div class="beaker" id="ester-beaker"></div>
+                <div class="beaker" id="acid-beaker"></div>
+                <div class="burette" id="burette"></div>
+                <div class="indicator" id="indicator-bottle"></div>
+                <div class="stopwatch" id="stopwatch-display">00:00:00</div>
+                <button id="start-reaction-btn" class="hidden">Start Reaction</button>
+                <button id="take-reading-btn" class="hidden">Take Reading</button>
+                <input type="number" id="burette-reading-input" class="hidden" placeholder="Enter burette reading (mL)">
+                <button id="submit-reading-btn" class="hidden">Submit Reading</button>
+            </div>
+            <div id="data-collection" class="hidden">
+                <h2>Data Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time (min)</th>
+                            <th>Burette Reading (mL)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-body">
+                        </tbody>
+                </table>
+                <button id="analyze-data-btn" class="hidden">Analyze Data</button>
+            </div>
+            <div id="results-area" class="hidden">
+                <h2>Results</h2>
+                <p id="calculated-k"></p>
+                <p id="graph-placeholder"></p>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
